@@ -58,8 +58,12 @@
     }
 }
 
+
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+	
+	NSLog(@"%f", fmod(currentTime, 60));
 }
+
 
 @end
