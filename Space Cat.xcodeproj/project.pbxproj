@@ -107,18 +107,12 @@
 			children = (
 				AFECE2FD1A07143100708CEF /* Music */,
 				AFECE3051A07143100708CEF /* Sprites.atlas */,
-				AFECE2D61A07142000708CEF /* AppDelegate.h */,
-				AFECE2D71A07142000708CEF /* AppDelegate.m */,
 				B2C7CC1A1A91ADA0004D693E /* TitleScene.h */,
 				B2C7CC1B1A91ADA0004D693E /* TitleScene.m */,
 				AFECE2D91A07142000708CEF /* GameScene.h */,
 				AFECE2DA1A07142000708CEF /* GameScene.m */,
 				AFECE2DC1A07142000708CEF /* GameScene.sks */,
-				AFECE2DE1A07142000708CEF /* GameViewController.h */,
-				AFECE2DF1A07142000708CEF /* GameViewController.m */,
 				AFECE2E11A07142000708CEF /* Main.storyboard */,
-				AFECE2E41A07142000708CEF /* Images.xcassets */,
-				AFECE2E61A07142000708CEF /* LaunchScreen.xib */,
 				AFECE2D21A07142000708CEF /* Supporting Files */,
 			);
 			path = "Space Cat";
@@ -127,6 +121,12 @@
 		AFECE2D21A07142000708CEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFECE2E61A07142000708CEF /* LaunchScreen.xib */,
+				AFECE2E41A07142000708CEF /* Images.xcassets */,
+				AFECE2DE1A07142000708CEF /* GameViewController.h */,
+				AFECE2DF1A07142000708CEF /* GameViewController.m */,
+				AFECE2D61A07142000708CEF /* AppDelegate.h */,
+				AFECE2D71A07142000708CEF /* AppDelegate.m */,
 				AFECE2D31A07142000708CEF /* Info.plist */,
 				AFECE2D41A07142000708CEF /* main.m */,
 			);

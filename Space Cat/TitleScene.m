@@ -7,6 +7,7 @@
 //
 
 #import "TitleScene.h"
+#import "GameScene.h"
 
 
 @implementation TitleScene
@@ -27,6 +28,12 @@
 
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	
+	GameScene* gameScene = [GameScene sceneWithSize:self.frame.size];
+	
+	SKTransition* transition = [SKTransition fadeWithDuration:1.0];
+	
+	[self.view presentScene:gameScene transition:transition];
 	
 	
 }
