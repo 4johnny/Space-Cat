@@ -71,9 +71,13 @@
 	float time = distanceProjectile / ProjectileSpeed;
 	
 	SKAction* moveProjectile = [SKAction moveTo:pointOffscreen duration:time];
-	
 	[self runAction:moveProjectile];
+
+	NSArray* actions = @[[SKAction waitForDuration:time * 0.75],
+						 [SKAction fadeOutWithDuration:time * 0.25],
+						 [SKAction removeFromParent]];
 	
+	[self runAction:[SKAction sequence:actions]];
 }
 
 
