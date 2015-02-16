@@ -10,17 +10,26 @@
 
 @implementation GameScene
 
+
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
-    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 65;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
-    
-    [self addChild:myLabel];
+
+	self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+	
+	CGPoint viewCenter = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+	CGPoint viewOrigin = CGPointMake(viewCenter.x - 384, viewCenter.y - 216);
+	
+	SKSpriteNode* greenNode = [SKSpriteNode spriteNodeWithColor:[SKColor greenColor] size:CGSizeMake(20, 200)];
+	greenNode.position = CGPointMake(viewOrigin.x + 10, viewOrigin.y + 10);
+	greenNode.anchorPoint = CGPointMake(0, 0);
+	[self addChild:greenNode];
+	
+	SKSpriteNode* redNode = [SKSpriteNode spriteNodeWithColor:[SKColor redColor] size:CGSizeMake(200, 20)];
+	redNode.position = greenNode.position;
+	redNode.anchorPoint = CGPointMake(0, 0);
+	[self addChild:redNode];
 }
+
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */

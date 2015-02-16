@@ -24,6 +24,7 @@
 		AFECE30B1A07143100708CEF /* PressStart.caf in Resources */ = {isa = PBXBuildFile; fileRef = AFECE3031A07143100708CEF /* PressStart.caf */; };
 		AFECE30C1A07143100708CEF /* StartScreen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFECE3041A07143100708CEF /* StartScreen.mp3 */; };
 		AFECE30D1A07143100708CEF /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AFECE3051A07143100708CEF /* Sprites.atlas */; };
+		B2C7CC1C1A91ADA0004D693E /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC1B1A91ADA0004D693E /* TitleScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		AFECE3031A07143100708CEF /* PressStart.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart.caf; sourceTree = "<group>"; };
 		AFECE3041A07143100708CEF /* StartScreen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartScreen.mp3; sourceTree = "<group>"; };
 		AFECE3051A07143100708CEF /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		B2C7CC1A1A91ADA0004D693E /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		B2C7CC1B1A91ADA0004D693E /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				AFECE3051A07143100708CEF /* Sprites.atlas */,
 				AFECE2D61A07142000708CEF /* AppDelegate.h */,
 				AFECE2D71A07142000708CEF /* AppDelegate.m */,
+				B2C7CC1A1A91ADA0004D693E /* TitleScene.h */,
+				B2C7CC1B1A91ADA0004D693E /* TitleScene.m */,
 				AFECE2D91A07142000708CEF /* GameScene.h */,
 				AFECE2DA1A07142000708CEF /* GameScene.m */,
 				AFECE2DC1A07142000708CEF /* GameScene.sks */,
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C7CC1C1A91ADA0004D693E /* TitleScene.m in Sources */,
 				AFECE2E01A07142000708CEF /* GameViewController.m in Sources */,
 				AFECE2D81A07142000708CEF /* AppDelegate.m in Sources */,
 				AFECE2DB1A07142000708CEF /* GameScene.m in Sources */,
