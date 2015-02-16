@@ -28,6 +28,7 @@
 		B2C7CC1F1A91C230004D693E /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC1E1A91C230004D693E /* MachineNode.m */; };
 		B2C7CC221A91C4C0004D693E /* SpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC211A91C4C0004D693E /* SpaceCatNode.m */; };
 		B2C7CC251A91F10F004D693E /* ProjectileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC241A91F10F004D693E /* ProjectileNode.m */; };
+		B2C7CC281A92086C004D693E /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC271A92086C004D693E /* Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		B2C7CC211A91C4C0004D693E /* SpaceCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceCatNode.m; sourceTree = "<group>"; };
 		B2C7CC231A91F10F004D693E /* ProjectileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileNode.h; sourceTree = "<group>"; };
 		B2C7CC241A91F10F004D693E /* ProjectileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectileNode.m; sourceTree = "<group>"; };
+		B2C7CC261A92086C004D693E /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		B2C7CC271A92086C004D693E /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 		AFECE2D21A07142000708CEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2C7CC261A92086C004D693E /* Util.h */,
+				B2C7CC271A92086C004D693E /* Util.m */,
 				AFECE2E61A07142000708CEF /* LaunchScreen.xib */,
 				AFECE2E41A07142000708CEF /* Images.xcassets */,
 				AFECE2DE1A07142000708CEF /* GameViewController.h */,
@@ -296,6 +301,7 @@
 				AFECE2D51A07142000708CEF /* main.m in Sources */,
 				B2C7CC221A91C4C0004D693E /* SpaceCatNode.m in Sources */,
 				B2C7CC1F1A91C230004D693E /* MachineNode.m in Sources */,
+				B2C7CC281A92086C004D693E /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

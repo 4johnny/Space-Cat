@@ -7,6 +7,7 @@
 //
 
 #import "ProjectileNode.h"
+#import "Util.h"
 
 
 @implementation ProjectileNode
@@ -67,7 +68,7 @@
 	
 	// speed = distance / time
 	// time = distance / speed
-	float time = distanceProjectile / 400.0;
+	float time = distanceProjectile / ProjectileSpeed;
 	
 	SKAction* moveProjectile = [SKAction moveTo:pointOffscreen duration:time];
 	
