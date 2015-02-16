@@ -7,6 +7,10 @@
 //
 
 #import "GameScene.h"
+#import "MachineNode.h"
+#import "SpaceCatNode.h"
+#import "ProjectileNode.h"
+
 
 @implementation GameScene
 
@@ -19,10 +23,11 @@
 		background.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
 		[self addChild:background];
 		
-		SKSpriteNode* machine = [SKSpriteNode spriteNodeWithImageNamed:@"machine_1"];
-		machine.position = CGPointMake(CGRectGetMidX(self.frame), 12);
-		machine.anchorPoint = CGPointMake(0.5, 0);
+		MachineNode* machine = [MachineNode machineAtPosition:CGPointMake(CGRectGetMidX(self.frame), 12)];
 		[self addChild:machine];
+		
+		SpaceCatNode* spaceCat = [SpaceCatNode spaceCatAtPosition:CGPointMake(machine.position.x, machine.position.y-2)];
+		[self addChild:spaceCat];
 	}
 	
 	return self;
@@ -34,36 +39,40 @@
 
 	self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
 
-	
 }
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.xScale = 0.5;
-        sprite.yScale = 0.5;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
+    // Called when a touch begins
+
+	for (UITouch* touch in touches) {
+	
+		CGPoint position = [touch locationInNode:self];
+		[self shootProjectileTowardsPosition:position];
+	}
 }
 
 
+-(void)shootProjectileTowardsPosition:(CGPoint)position {
+	
+	SpaceCatNode* spaceCat = (SpaceCatNode*)[self childNodeWithName:@"SpaceCat"];
+	[spaceCat performTap];
+	
+	MachineNode* machine = (MachineNode*)[self childNodeWithName:@"Machine"];
+	ProjectileNode* projectile = [ProjectileNode projectileAtPosition:CGPointMake(machine.position.x, machine.position.y + machine.frame.size.height - 10)];
+	[self addChild:projectile];
+	[projectile moveTowardPosition:position];
+}
+
+
+
+/*
 -(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+    // Called before each frame is rendered
 	
 	NSLog(@"%f", fmod(currentTime, 60));
 }
+*/
 
 
 @end

@@ -25,6 +25,9 @@
 		AFECE30C1A07143100708CEF /* StartScreen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFECE3041A07143100708CEF /* StartScreen.mp3 */; };
 		AFECE30D1A07143100708CEF /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AFECE3051A07143100708CEF /* Sprites.atlas */; };
 		B2C7CC1C1A91ADA0004D693E /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC1B1A91ADA0004D693E /* TitleScene.m */; };
+		B2C7CC1F1A91C230004D693E /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC1E1A91C230004D693E /* MachineNode.m */; };
+		B2C7CC221A91C4C0004D693E /* SpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC211A91C4C0004D693E /* SpaceCatNode.m */; };
+		B2C7CC251A91F10F004D693E /* ProjectileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7CC241A91F10F004D693E /* ProjectileNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,12 @@
 		AFECE3051A07143100708CEF /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		B2C7CC1A1A91ADA0004D693E /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
 		B2C7CC1B1A91ADA0004D693E /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		B2C7CC1D1A91C230004D693E /* MachineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineNode.h; sourceTree = "<group>"; };
+		B2C7CC1E1A91C230004D693E /* MachineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineNode.m; sourceTree = "<group>"; };
+		B2C7CC201A91C4C0004D693E /* SpaceCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceCatNode.h; sourceTree = "<group>"; };
+		B2C7CC211A91C4C0004D693E /* SpaceCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceCatNode.m; sourceTree = "<group>"; };
+		B2C7CC231A91F10F004D693E /* ProjectileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileNode.h; sourceTree = "<group>"; };
+		B2C7CC241A91F10F004D693E /* ProjectileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectileNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,12 @@
 				AFECE2D91A07142000708CEF /* GameScene.h */,
 				AFECE2DA1A07142000708CEF /* GameScene.m */,
 				AFECE2DC1A07142000708CEF /* GameScene.sks */,
+				B2C7CC231A91F10F004D693E /* ProjectileNode.h */,
+				B2C7CC241A91F10F004D693E /* ProjectileNode.m */,
+				B2C7CC201A91C4C0004D693E /* SpaceCatNode.h */,
+				B2C7CC211A91C4C0004D693E /* SpaceCatNode.m */,
+				B2C7CC1D1A91C230004D693E /* MachineNode.h */,
+				B2C7CC1E1A91C230004D693E /* MachineNode.m */,
 				AFECE2E11A07142000708CEF /* Main.storyboard */,
 				AFECE2D21A07142000708CEF /* Supporting Files */,
 			);
@@ -275,9 +290,12 @@
 			files = (
 				B2C7CC1C1A91ADA0004D693E /* TitleScene.m in Sources */,
 				AFECE2E01A07142000708CEF /* GameViewController.m in Sources */,
+				B2C7CC251A91F10F004D693E /* ProjectileNode.m in Sources */,
 				AFECE2D81A07142000708CEF /* AppDelegate.m in Sources */,
 				AFECE2DB1A07142000708CEF /* GameScene.m in Sources */,
 				AFECE2D51A07142000708CEF /* main.m in Sources */,
+				B2C7CC221A91C4C0004D693E /* SpaceCatNode.m in Sources */,
+				B2C7CC1F1A91C230004D693E /* MachineNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
